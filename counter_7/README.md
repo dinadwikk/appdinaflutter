@@ -1,16 +1,11 @@
-# counter_7
+# TUGAS 7
 
-A new Flutter project.
+Pemrograman Berbasis Platform (CSGE602022) - diselenggarakan oleh Fakultas Ilmu Komputer Universitas Indonesia, Semester Ganjil 2022/2023
 
-## Getting Started
+*Read this in other languages: [Indonesian](README.md), [English](README.en.md)*
+Heroku app url : https://dinadatabaseapp.herokuapp.com/katalog/
 
-This project is a starting point for a Flutter application.
+## COUNTER_7
+### Pendahuluan
+Pada tugas ini, kita akan mengimplementasikan beberapa elemen dasar pada Flutter.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
