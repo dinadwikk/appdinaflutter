@@ -114,7 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ] else ...[
               const Text("GENAP",
                         style: TextStyle(
-                        color: Color.fromARGB(255, 106, 173, 148),
+                        color: Color.fromARGB(255, 244, 93, 93),
                         )),
             ],
             Text(
@@ -124,29 +124,31 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-      floatingActionButton: Center(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            FloatingActionButton(
-              onPressed: _decrementCounter,
-              tooltip: 'Decrement',
-              child: const Icon(Icons.remove),
-            ),
-            FloatingActionButton(
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,  
+      floatingActionButton: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Align(
+            alignment: Alignment.bottomLeft,
+            child: _counter != 0
+                ? FloatingActionButton(
+                    onPressed: _decrementCounter,
+                    tooltip: 'Decrement',
+                    child: const Icon(Icons.remove),
+                  )
+                : null,
+          ),
+          Align(
+            alignment: Alignment.bottomRight,
+            child: FloatingActionButton(
               onPressed: _incrementCounter,
-                    tooltip: 'Increment',
-                    child: const Icon(Icons.add),
+              tooltip: 'Increment',
+              child: const Icon(Icons.add),
             ),
-          ],
-        ),
-      )
-  
-
+          ),
+        ],
+      ),
     );
   }
-
-  int get opeartor => 2;
 }
+
