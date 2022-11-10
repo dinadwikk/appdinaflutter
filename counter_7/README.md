@@ -35,7 +35,7 @@ Pada tugas 7 ini berikut widget yang digunakan  :
  
  ### (*) Const dan Final
 Dart merupakan aplikasi yang mendukung variabel yang bersifat immutable dan mutable. Dalam aplikasinya, final dapat digunakan untuk deklarasi variabel immutable yang nilainya sudah ataupun belum diketahui hal ini dapat dilihat saat run-time. Sedangkan const,  digunakan untuk deklarasi variabel immutable yang nilainya bersifat konstan, hal ini dapat dilihat saat compile-time.
-AAA
+
 ### (*) Implementasi 
 1. Buatlah aplikasi baru ` 'flutter create ... ' ` di terminal 
 2. Tambahkan fungsi Decrement pada `main.dart` di file `lib`
