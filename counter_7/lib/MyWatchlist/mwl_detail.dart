@@ -23,7 +23,7 @@ class MyWatchListDetail extends StatelessWidget {
           Expanded(
             flex: 1,
             child: Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(10.0),
               child: Column(
                 children: <Widget>[
                   Column(
@@ -37,7 +37,7 @@ class MyWatchListDetail extends StatelessWidget {
                       const SizedBox(height: 20),
                       ListTile(
                         leading: const Text(
-                          'Release Date: ',
+                          'Release Date : ',
                           style: TextStyle(
                               fontSize: 16, fontWeight: FontWeight.bold),
                         ),
@@ -49,19 +49,19 @@ class MyWatchListDetail extends StatelessWidget {
                       ),
                       ListTile(
                         leading: const Text(
-                          'Rating: ',
+                          'Rating : ',
                           style: TextStyle(
                               fontSize: 16, fontWeight: FontWeight.bold),
                         ),
                         trailing: Text(
-                          '${myWatchList.rating} / 5',
+                          myWatchList.rating,
                           style: const TextStyle(fontSize: 16),
                         ),
                         dense: true,
                       ),
                       ListTile(
                         leading: const Text(
-                          'Status: ',
+                          'Status : ',
                           style: TextStyle(
                               fontSize: 16, fontWeight: FontWeight.bold),
                         ),
@@ -72,26 +72,30 @@ class MyWatchListDetail extends StatelessWidget {
                         dense: true,
                       ),
                       ListTile(
-                          title: const Padding(
-                            padding: EdgeInsets.only(bottom: 10.0),
-                            child: Text(
-                              'Review: ',
-                              style: TextStyle(
-                                  fontSize: 16, fontWeight: FontWeight.bold),
-                            ),
-                          ),
-                          dense: true,
-                          subtitle: Text(
+                        leading: const Text(
+                          'Review : ',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold),
+                        ),
+                        trailing: Text(
+                          myWatchList.review,
+                          style: const TextStyle(fontSize: 16),
+                        ),
+                        subtitle: Text(
                             myWatchList.review,
                             style: const TextStyle(
                                 fontSize: 14, color: Colors.black),
-                          )),
+                        ),
+                        dense: true,
+                      )
+                         
+                          
                     ],
                   ),
                   const Spacer(),
                   TextButton(
                     style: TextButton.styleFrom(
-                        backgroundColor: Colors.blue,
+                        backgroundColor:Color(0xff59A5D8),
                         padding: const EdgeInsets.all(15.0),
                         tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                         alignment: Alignment.center),

@@ -17,7 +17,7 @@ class Mwldata {
 
     bool watched;
     String title;
-    double rating;
+    String rating;
     String releaseDate;
     String review;
 

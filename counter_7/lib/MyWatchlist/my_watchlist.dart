@@ -60,7 +60,7 @@ class _MWLState extends State<MyWatchlist> {
                                   side: BorderSide(
                                     color: snapshot.data![index].watched
                                         ? Color.fromARGB(255, 76, 147, 175)
-                                        : Color.fromARGB(255, 202, 137, 220),
+                                        : Color.fromARGB(255, 203, 54, 244),
                                     width: 2,
                                   )),
                               child: Container(
@@ -73,15 +73,6 @@ class _MWLState extends State<MyWatchlist> {
                                         fontSize: 18.0,
                                         fontWeight: FontWeight.bold,
                                       ),
-                                    ),
-                                    trailing: Checkbox(
-                                      value: snapshot.data![index].watched,
-                                      onChanged: (bool? newValue) {
-                                        setState(() {
-                                          snapshot.data![index].watched =
-                                              !snapshot.data![index].watched;
-                                        });
-                                      },
                                     ),
                                     onTap: () {
                                       Navigator.push(
