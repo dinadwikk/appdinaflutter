@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:counter_7/tambah.dart';
 import 'package:counter_7/drawer.dart';
-import 'package:counter_7/data.dart';
-import 'package:counter_7/budget.dart';
 
 
 

@@ -2,13 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:counter_7/main.dart';
 import 'package:counter_7/tambah.dart';
 import 'package:counter_7/data.dart';
-import 'package:counter_7/model/mwldata.dart';
-import 'package:counter_7/MyWatchlist/mwl_detail.dart';
 import 'package:counter_7/MyWatchlist/my_watchlist.dart';
 
 
 Drawer buildDrawer(BuildContext context) {
-  String? route = ModalRoute.of(context)?.settings.name;
 
   return Drawer(
     

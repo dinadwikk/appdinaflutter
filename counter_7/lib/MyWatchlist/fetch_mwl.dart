@@ -1,8 +1,6 @@
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:counter_7/model/mwldata.dart';
-import 'package:counter_7/MyWatchlist/mwl_detail.dart';
-import 'package:counter_7/MyWatchlist/my_watchlist.dart';
 
 Future<List<Mwldata>> fetchWatchlist() async {
   var url = Uri.parse('https://dinawatchlist.herokuapp.com/mywatchlist/json/');

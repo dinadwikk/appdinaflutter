@@ -1,9 +1,5 @@
-import 'package:http/http.dart' as http;
-import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:counter_7/main.dart';
 import 'package:counter_7/drawer.dart';
-import 'package:counter_7/model/mwldata.dart';
 import 'package:counter_7/MyWatchlist/mwl_detail.dart';
 import 'package:counter_7/MyWatchlist/fetch_mwl.dart';
 
