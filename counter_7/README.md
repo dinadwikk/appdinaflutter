@@ -20,11 +20,17 @@ Perbedaan :
 ### (*) Penggunaan widget 
 Pada tugas 7 ini berikut widget yang digunakan  :
     - AppBar() : Sebagai menu petunjuk
+    
     - Center() : Mengatur bentuk layout menjadi di tengah
+    
     - Column() : Mengatur widget menjadi seperti bentuk sebuah kolom
+    
     - Row() : Mengatur widget menjadi seperti bentuk sebuah baris
+    
     - FloatingActionButton() : Menampilkan button
+    
     - Icon() : Menampilkan icon
+    
     - Scaffold : Landasan halaman
  dll.
  
