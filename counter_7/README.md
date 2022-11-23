@@ -32,7 +32,8 @@ Pada tugas 7 ini berikut widget yang digunakan  :
     - Icon() : Menampilkan icon
     
     - Scaffold : Landasan halaman
- dll.
+    
+    - dll.
  
  ### (*) setState()
  setState() merupakan cara Flutter untuk me-rebuild widget pada widget tree, lalu nilai variabel terbaru akan digunakan untuk membuat interface pengguna.
