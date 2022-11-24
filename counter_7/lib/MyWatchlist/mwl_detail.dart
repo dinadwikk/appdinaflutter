@@ -65,11 +65,6 @@ class MyWatchListDetail extends StatelessWidget {
                           myWatchList.review,
                           style: const TextStyle(fontSize: 16),
                         ),
-                        subtitle: Text(
-                            myWatchList.review,
-                            style: const TextStyle(
-                                fontSize: 14, color: Colors.black),
-                        ),
                         dense: true,
                       )
                          
