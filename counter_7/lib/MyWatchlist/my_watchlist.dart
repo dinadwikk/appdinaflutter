@@ -30,7 +30,7 @@ class _MWLState extends State<MyWatchlist> {
                       Text(
                         "Tidak ada data :(",
                         style:
-                            TextStyle(color: Color(0xff59A5D8), fontSize: 20),
+                            TextStyle(color: Color.fromARGB(255, 255, 0, 0), fontSize: 20),
                       ),
                       SizedBox(height: 8),
                     ],
@@ -47,7 +47,7 @@ class _MWLState extends State<MyWatchlist> {
                                 borderRadius: BorderRadius.circular(15.0),
                                 boxShadow: const [
                                   BoxShadow(
-                                      color: Colors.black, blurRadius: 2.0)
+                                      color: Color.fromARGB(255, 79, 198, 211), blurRadius: 2.0)
                                 ]),
                             
                               child: Container(
@@ -63,6 +63,7 @@ class _MWLState extends State<MyWatchlist> {
                                     ),
                                     trailing: Checkbox(
                                       value: snapshot.data![index].watched,
+                                      activeColor: Colors.pinkAccent,
                                       onChanged: (bool? newValue) {
                                         setState(() {
                                           snapshot.data![index].watched =
