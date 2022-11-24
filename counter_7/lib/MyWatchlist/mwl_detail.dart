@@ -32,28 +32,17 @@ class MyWatchListDetail extends StatelessWidget {
                       const SizedBox(height: 20),
                       ListTile(
                         leading: const Text(
-                          'Release Date : ',
+                          'Rating: ',
                           style: TextStyle(
                               fontSize: 16, fontWeight: FontWeight.bold),
                         ),
                         trailing: Text(
-                          myWatchList.releaseDate,
+                          '${myWatchList.rating} / 10',
                           style: const TextStyle(fontSize: 16),
                         ),
                         dense: true,
                       ),
-                      ListTile(
-                        leading: const Text(
-                          'Rating : ',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold),
-                        ),
-                        trailing: Text(
-                          myWatchList.rating,
-                          style: const TextStyle(fontSize: 16),
-                        ),
-                        dense: true,
-                      ),
+                      
                       ListTile(
                         leading: const Text(
                           'Status : ',
