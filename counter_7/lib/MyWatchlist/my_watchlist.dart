@@ -49,16 +49,7 @@ class _MWLState extends State<MyWatchlist> {
                                   BoxShadow(
                                       color: Colors.black, blurRadius: 2.0)
                                 ]),
-                            child: Card(
-                               shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(
-                                      10), // if you need this
-                                  side: BorderSide(
-                                    color: snapshot.data![index].watched
-                                        ? Color.fromARGB(255, 76, 147, 175)
-                                        : Color.fromARGB(255, 203, 54, 244),
-                                    width: 2,
-                                  )),
+                            
                               child: Container(
                                   padding: const EdgeInsets.symmetric(
                                       horizontal: 2, vertical: 8),
@@ -70,6 +61,15 @@ class _MWLState extends State<MyWatchlist> {
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
+                                    trailing: Checkbox(
+                                      value: snapshot.data![index].watched,
+                                      onChanged: (bool? newValue) {
+                                        setState(() {
+                                          snapshot.data![index].watched =
+                                              !snapshot.data![index].watched;
+                                        });
+                                      },
+                                    ),
                                     onTap: () {
                                       Navigator.push(
                                         context,
@@ -80,7 +80,7 @@ class _MWLState extends State<MyWatchlist> {
                                                         snapshot.data![index])),
                                       );
                                     },
-                                  )))));
+                                  ))));
                 }
               }
             }));
