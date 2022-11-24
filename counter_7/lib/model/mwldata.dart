@@ -24,7 +24,7 @@ class Mwldata {
     factory Mwldata.fromJson(Map<String, dynamic> json) => Mwldata(
         watched: json["fields"]["watched"],
         title: json["fields"]["title"], 
-        rating: json["fields"]["rating"].toDouble(),
+        rating: json["fields"]["rating"],
         releaseDate: json["fields"]["release_date"],
         review: json["fields"]["review"],
     );
